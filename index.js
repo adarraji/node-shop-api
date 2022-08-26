@@ -1,6 +1,7 @@
 const express = require("express");
 require('dotenv').config();
 const knex = require("knex");
+const userRoute = require("./routes/user")
 
 const db = knex({
     client: "pg",
@@ -14,6 +15,8 @@ const db = knex({
 });
 
 const app = express();
+
+app.use("/api/user", userRoute);
 
 app.listen(process.env.PORT || "5000", () => {
     console.log(`app is running on port ${process.env.PORT}`)
