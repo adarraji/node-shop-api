@@ -1,0 +1,22 @@
+{
+  "name": "shop-api",
+  "version": "1.0.0",
+  "description": "*",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adarraji/node-shop-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adarraji/node-shop-api/issues"
+  },
+  "homepage": "https://github.com/adarraji/node-shop-api#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
