@@ -6,7 +6,7 @@
 * Express.js
 * MongoDB
 
-## Environmnetal Variables
+## Environmental Variables
 You must add DB username and password in `index.js`
 
 ```js
