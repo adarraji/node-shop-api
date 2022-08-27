@@ -1,18 +1,6 @@
 const express = require("express");
 require('dotenv').config();
-const knex = require("knex");
-const userRoute = require("./routes/user")
-
-const db = knex({
-    client: "pg",
-    connection: {
-        host: "127.0.0.1",
-        port: 5432,
-        user: `${process.env.DB_USER}`,
-        password: `${process.env.DB_PASSWORD}`,
-        database: "shop"
-    }
-});
+const userRoute = require("./routes/user");
 
 const app = express();
 app.use(express.json());
