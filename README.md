@@ -4,5 +4,5 @@
 
 * Node.js
 * Express.js
-* PostgreSQL
+* MongoDB
 * Knex.js 
