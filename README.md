@@ -1,5 +1,13 @@
 # eCommerce API
 
+To run the application
+
+1. Clone this repo
+2. Run `npm install`
+3. Run `npm start`
+
+You must add your MongoDB url in the `index.js` file to connect to Clarifai.
+
 ## Built With
 
 * Node.js

@@ -8,7 +8,7 @@ const authRoute = require("./routes/auth");
 const app = express();
 app.use(express.json());
 
-mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.gnkjwte.mongodb.net/shop?retryWrites=true&w=majority`)
+mongoose.connect(`${process.env.MONGO_URL}`)
     .then(() => console.log("DB Connection Sucessfull"))
     .catch((err) => console.log(err));
 
