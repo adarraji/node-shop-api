@@ -5,6 +5,7 @@
 * Node.js
 * Express.js
 * MongoDB
+* CryptoJS
 
 ## Environmental Variables
 You must add DB username and password in `index.js`
