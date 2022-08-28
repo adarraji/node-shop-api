@@ -28,3 +28,7 @@ mongoose.connect(`${process.env.MONGO_URL}`)
 ### CryptoJS AES secret key
 
 You need to add passphrase in `src/auth.js` . It's being used by CryptoJS AES algorithm to to envrypt/decrypt passwords.
+
+```js
+password: CryptoJS.AES.encrypt(req.body.password, process.env.PASS_SEC).toString()
+```
