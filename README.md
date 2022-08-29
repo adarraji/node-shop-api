@@ -33,3 +33,10 @@ You need to add passphrase in `src/auth.js` . It's being used by CryptoJS AES al
 ```js
 password: CryptoJS.AES.encrypt(req.body.password, process.env.PASS_SEC).toString()
 ```
+
+### JSON Web Token secret key
+
+You need to add the JWT secret in `src/auth.js`. 
+```js
+const accessToken = jwt.sign({ id: user._id, isAdmin: user.isAdmin }, process.env.JWT_SEC, { expiresIn: "3d" }
+```
