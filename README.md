@@ -12,6 +12,7 @@ To run the application
 * Express.js
 * MongoDB
 * CryptoJS
+* JSON Web Token
 
 ## Environmental Variables
 
