@@ -41,8 +41,9 @@ router.get("/find/:id", veryifyTokenAndAdmin, async (req, res) => {
 
 // GET ALL USERs
 router.get("/", veryifyTokenAndAdmin, async (req, res) => {
+    const query = req.query.new;
     try {
-        const users = await User.find();
+        const users = query ? await User.find().sort({ _id: -1 }).limit(1) : await User.find();
         res.status(200).json(users);
     } catch (err) {
         res.status(500).json(err);
