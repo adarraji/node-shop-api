@@ -1,5 +1,5 @@
 const User = require("../models/User");
-const { veryifyTokenAndAuthorization } = require("./verifyToken");
+const { veryifyTokenAndAuthorization, veryifyTokenAndAdmin } = require("./verifyToken");
 const router = require("express").Router();
 
 // UPDATE
@@ -16,14 +16,27 @@ router.put("/:id", veryifyTokenAndAuthorization, async (req, res) => {
     }
 })
 
-// UPDATE
+// DELETE
 router.delete("/:id", veryifyTokenAndAuthorization, async (req, res) => {
     try {
         await User.findByIdAndDelete(req.params.id);
-        res.status(200).json("User has been deleted");
+        res.status(200).json("User has been deleted...");
     } catch (err) {
         res.status(500).json(err);
     }
 });
+
+
+// GET USER
+router.get("/find/:id", veryifyTokenAndAdmin, async (req, res) => {
+    try {
+        const user = await User.findById(req.params.id);
+        const { password, ...others } = user._doc;
+        res.status(200).json(others);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
 
 module.exports = router;
