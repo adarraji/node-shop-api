@@ -4,6 +4,8 @@ require('dotenv').config();
 const authRoute = require("./routes/auth");
 const userRoute = require("./routes/user");
 const productRoute = require("./routes/product");
+const orderRoute = require("./routes/order");
+const cartRoute = require("./routes/cart");
 
 
 
@@ -17,6 +19,8 @@ mongoose.connect(`${process.env.MONGO_URL}`)
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
 app.use("/api/products", productRoute);
+app.use("/api/orders", orderRoute);
+app.use("/api/orders", cartRoute);
 
 
 app.listen(process.env.PORT || "5000", () => {
