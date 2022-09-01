@@ -28,8 +28,8 @@ You need to add passphrase `PASS_SEC` in `src/auth.js` . It's being used by Cryp
 
 ### JSON Web Token secret key
 
-You need to add the JWT secret `JWT_SEC` in `src/auth.js` and `verifyToken.js`
+Add the JWT secret `JWT_SEC` in `src/auth.js` and `verifyToken.js`
 
 ### Stripe secret key
 
-Add your Stripe secret key `STRIPE_KEY`
+Add your Stripe secret key `STRIPE_KEY` in `src/stripe.js`
