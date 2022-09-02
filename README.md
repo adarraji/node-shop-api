@@ -13,6 +13,7 @@ To run the application
 * MongoDB
 * CryptoJS
 * JSON Web Token
+* Stripe
 
 ## Environmental Variables
 
