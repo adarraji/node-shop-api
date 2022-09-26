@@ -2,18 +2,6 @@ const User = require("../models/User");
 const { veryifyTokenAndAuthorization, veryifyTokenAndAdmin } = require("./verifyToken");
 const router = require("express").Router();
 
-// CREATE
-router.post("/", veryifyTokenAndAdmin, async (req, res) => {
-    const newUser = new User(req.body);
-    try {
-        const savedUser = await newUser.save();
-        res.status(201).json(savedUser);
-    }
-    catch (err) {
-        res.status(500).json(err);
-    }
-})
-
 // UPDATE
 router.put("/:id", veryifyTokenAndAuthorization, async (req, res) => {
     if (req.body.password) {
