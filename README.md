@@ -4,7 +4,7 @@ Backend application for [React eCommerce Web application](https://github.com/ada
 
 Created using Node.js and MongoDB. Theis app inlcudes Node.js CRUD operations, fetching with queries and MongoDB methods. Also to provide security, This server uses JSON Web Token and verify user and admin requests. Stripe is being used aas a payment method to recevie a payment from the client side.
 
-This is one of three parts of full stack eCommerce app. You can find the React eCommerce Web application [here](https://github.com/adarraji/react-shop) and React Admin Dashboard [here](https://github.com/adarraji/react-shop-admin)
+This is one of three parts of full stack eCommerce app. You can find the React eCommerce Web application [here](https://github.com/adarraji/react-shop) and React Shop Admin Dashboard [here](https://github.com/adarraji/react-shop-admin)
 
 
 To run the application
