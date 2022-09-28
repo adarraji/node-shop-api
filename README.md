@@ -41,3 +41,12 @@ Add the JWT secret `JWT_SEC` in `src/auth.js` and `verifyToken.js`
 ### Stripe secret key
 
 Add your Stripe secret key `STRIPE_KEY` in `src/stripe.js`
+
+
+## Deployment
+Deployed on Heroku
+
+
+## Authors
+
+- **Ali Darraji** - [https://github.com/adarraji](https://github.com/adarraji)
