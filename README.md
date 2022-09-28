@@ -1,6 +1,6 @@
 # Node eCommerce REST API
 
-Backend application for [React eCommerce Web application](https://github.com/adarraji/react-shop) and [React Admin Dashboard](https://github.com/adarraji/react-shop-admin).
+Backend application for [React eCommerce Web application](https://github.com/adarraji/react-shop) and [React Shop Admin Dashboard](https://github.com/adarraji/react-shop-admin).
 
 Created using Node.js and MongoDB. Theis app inlcudes Node.js CRUD operations, fetching with queries and MongoDB methods. Also to provide security, This server uses JSON Web Token and verify user and admin requests. Stripe is being used aas a payment method to recevie a payment from the client side.
 
