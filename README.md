@@ -44,7 +44,10 @@ Add your Stripe secret key `STRIPE_KEY` in `src/stripe.js`
 
 
 ## Deployment
-Deployed on Heroku
+
+Backend deployed on [Render](https://render.com/)
+
+Database deployed on [MongoDB Cloud Services](https://www.mongodb.com/cloud)
 
 
 ## Authors
